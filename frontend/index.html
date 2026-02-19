@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Oh Notes!</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div>
+        <p class="subtitle">Catatan Harianmu</p>
+        <h1><span id="oh-title">Oh</span> Notes!</h1>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <aside class="form-panel">
+      <h2 id="formTitle">Tambah Note</h2>
+      <div class="form-card">
+        <label for="title">Judul</label>
+        <input type="text" id="title" placeholder="Nama catatan..." />
+
+        <label for="content">Isi Note</label>
+        <textarea id="content" placeholder="Tulis sesuatu..."></textarea>
+
+        <input type="hidden" id="noteId" />
+        <button id="addBtn">Tambah Note</button>
+      </div>
+    </aside>
+
+    <section class="notes-panel">
+      <h2>Daftar Notes</h2>
+      <div id="notes"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
