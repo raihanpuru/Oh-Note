@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000";
+const API_URL = "";
 
 const notesDiv = document.getElementById("notes");
 const addBtn = document.getElementById("addBtn");
@@ -130,5 +130,6 @@ function resetForm() {
   addBtn.textContent = "Tambah Note";
   formTitle.textContent = "Tambah Note";
 }
+
 
 fetchNotes();
